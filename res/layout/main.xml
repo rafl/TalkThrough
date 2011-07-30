@@ -9,5 +9,13 @@
     android:layout_height="wrap_content"
     android:text="Hello World, TalkThroughSettings"
     />
+<Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="start"
+        android:onClick="startTalkThrough" />
+<Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="stop"
+        android:onClick="stopTalkThrough" />
 </LinearLayout>
 
