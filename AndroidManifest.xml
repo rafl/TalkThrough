@@ -4,6 +4,7 @@
       android:versionCode="1"
       android:versionName="1.0">
     <application android:label="@string/app_name" android:icon="@drawable/icon">
+
         <activity android:name="TalkThroughSettings"
                   android:label="@string/app_name">
             <intent-filter>
@@ -11,5 +12,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="TalkThrough" android:enabled="true">
+          <intent-filter>
+            <action android:name="org.perldition.talkthrough.TalkThrough.start" />
+            <action android:name="org.perldition.talkthrough.TalkThrough.stop" />
+          </intent-filter>
+        </service>
+
     </application>
 </manifest>
