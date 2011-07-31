@@ -41,7 +41,7 @@ public class TalkThrough extends Service {
     }
 
     public void stopService() {
-        if (mEchoer != null){
+        if (mEchoer != null) {
             mEchoer.close();
 
             try {
